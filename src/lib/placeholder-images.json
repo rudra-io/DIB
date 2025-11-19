@@ -1,0 +1,142 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Abstract 3D sphere",
+      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/Codegen/sphere.png",
+      "imageHint": "sphere abstract"
+    },
+    {
+      "id": "hero-image-gif",
+      "description": "Animated sphere GIF",
+      "imageUrl": "/spehere.gif",
+      "imageHint": "sphere abstract gif"
+    },
+    {
+      "id": "stand-out-image",
+      "description": "Abstract 3D sphere for stand out section",
+      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/Codegen/sphere.png",
+      "imageHint": "sphere abstract"
+    },
+    {
+      "id": "client-logo-1",
+      "description": "Abstract client logo 1",
+      "imageUrl": "https://images.unsplash.com/photo-1754837369018-ff35655d126f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    },
+    {
+      "id": "client-logo-2",
+      "description": "Abstract client logo 2",
+      "imageUrl": "https://images.unsplash.com/photo-1760037028517-e5cc6e3ebd3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    },
+    {
+      "id": "client-logo-3",
+      "description": "Abstract client logo 3",
+      "imageUrl": "https://images.unsplash.com/photo-1755435140567-3c9df5ceffa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    },
+    {
+      "id": "client-logo-4",
+      "description": "Abstract client logo 4",
+      "imageUrl": "https://images.unsplash.com/photo-1662467150566-f3f12de2ee57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    },
+    {
+      "id": "client-logo-5",
+      "description": "Abstract client logo 5",
+      "imageUrl": "https://images.unsplash.com/photo-1662467150566-f3f12de2ee57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTI4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    },
+    {
+      "id": "impact-project-1",
+      "description": "Cloud infrastructure diagram",
+      "imageUrl": "https://images.unsplash.com/photo-1544890225-2fde0e666012?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMG1pZ3JhdGlvbnxlbnwwfHx8fDE3NjMyMDYyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud infrastructure"
+    },
+    {
+      "id": "impact-project-2",
+      "description": "Cybersecurity operations center",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-ff9898a7a258?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc2MzIwNjIzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cybersecurity operations"
+    },
+    {
+      "id": "impact-project-3",
+      "description": "Data analytics dashboard on a screen",
+      "imageUrl": "https://images.unsplash.com/photo-1610404281735-a7344a17852e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MzIwNjIzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analytics"
+    },
+    {
+      "id": "impact-project-4",
+      "description": "Software development code on a screen",
+      "imageUrl": "https://images.unsplash.com/photo-1605379399642-870262d3d051?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NjI5Njg1NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software development"
+    },
+    {
+      "id": "expertise-cloud",
+      "description": "Cloud solutions diagram",
+      "imageUrl": "https://images.unsplash.com/photo-1603969400547-a41f828114b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMHNvbHV0aW9uc3xlbnwwfHx8fDE3NjMyMDY0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud solutions"
+    },
+    {
+      "id": "expertise-cybersecurity",
+      "description": "Cybersecurity lock",
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5fGVufDB8fHx8MTc2MzIwNjQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cybersecurity lock"
+    },
+    {
+      "id": "expertise-data",
+      "description": "Data and analytics charts",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2MzIwNjQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analytics"
+    },
+    {
+      "id": "expertise-software",
+      "description": "Custom software development code",
+      "imageUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50fGVufDB8fHx8MTc2MzIwNjQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "software development"
+    },
+    {
+      "id": "process-image",
+      "description": "Abstract scribble animation",
+      "imageUrl": "/scribble.gif",
+      "imageHint": "scribble animation"
+    },
+    {
+      "id": "parallax-1",
+      "description": "Local image bb",
+      "imageUrl": "/bb.png",
+      "imageHint": "local image"
+    },
+    {
+      "id": "parallax-2",
+      "description": "Local image fm",
+      "imageUrl": "/fm.png",
+      "imageHint": "local image"
+    },
+    {
+      "id": "parallax-3",
+      "description": "Local image lg",
+      "imageUrl": "/lg.png",
+      "imageHint": "local image"
+    },
+    {
+      "id": "parallax-8",
+      "description": "Local image pp",
+      "imageUrl": "/pp.png",
+      "imageHint": "local image"
+    },
+    {
+      "id": "parallax-9",
+      "description": "Local image me",
+      "imageUrl": "/me.png",
+      "imageHint": "local image"
+    },
+    {
+      "id": "parallax-gq",
+      "description": "Local image gq",
+      "imageUrl": "/gq.png",
+      "imageHint": "local image"
+    }
+  ]
+}
