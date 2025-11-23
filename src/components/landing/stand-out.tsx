@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -9,10 +8,10 @@ import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const stats = [
-  { value: 150, label: 'Project Completed', suffix: '+' },
+  { value: 37, label: 'Project Completed', suffix: '+' },
   { value: 99, label: 'Client Satisfaction', suffix: '%' },
-  { value: 25000, label: 'Hours of work', suffix: '+' },
-  { value: 10, label: 'Years Experience', prefix: '0', suffix: '+' },
+  { value: 5172, label: 'Hours of work', suffix: '+' },
+  { value: 3, label: 'Years Experience', prefix: '0', suffix: '+' },
 ];
 
 export function StandOut() {
@@ -28,7 +27,7 @@ export function StandOut() {
   const isInView = useInView(svgRef, { once: true, amount: 0.5 });
   const titleRef = useRef<HTMLHeadingElement>(null);
   const isTitleInView = useInView(titleRef, { once: true, amount: 0.5 });
-  
+
   const sectionRef = useRef<HTMLDivElement>(null);
   const isSectionInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
@@ -48,21 +47,11 @@ export function StandOut() {
       opacity: 0,
       y: 20,
       scale: 0.95,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
     },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 100,
-      },
     },
   };
 
@@ -72,18 +61,23 @@ export function StandOut() {
       ref={targetRef}
       className="w-full py-16 md:py-24 bg-transparent text-white overflow-hidden"
     >
-      <div className="container px-6 lg:px-16">
-        <motion.div 
+      {/* UNIFIED CONTAINER TO MAINTAIN PERFECT ALIGNMENT */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-16">
+        
+        <motion.div
           ref={sectionRef}
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isSectionInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          className="grid lg:grid-cols-2 gap-16 items-center"
         >
-          <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
+          
+          {/* LEFT COLUMN — now left-aligned, equal spacing */}
+          <div className="flex flex-col space-y-8 text-left">
+            
             <motion.h2
               ref={titleRef}
-              className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-white"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white"
               variants={containerVariants}
               initial="hidden"
               animate={isTitleInView ? "visible" : "hidden"}
@@ -98,9 +92,10 @@ export function StandOut() {
                 </motion.span>
               ))}
             </motion.h2>
-            <motion.div 
+
+            <motion.div
               ref={svgRef}
-              className="relative mx-auto lg:mx-0"
+              className="relative"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
@@ -108,25 +103,36 @@ export function StandOut() {
               <DatabaseWithRestApi />
             </motion.div>
           </div>
+
+          {/* RIGHT COLUMN — fully aligned with left */}
           <motion.div
             whileHover={{ rotateX: 30, rotateY: 20 }}
             transition={{ duration: 0.5 }}
             style={{ transformStyle: 'preserve-3d' }}
-            className="flex flex-col justify-center"
+            className="relative w-full"
           >
-            <motion.div style={{ scale: scale, transformStyle: 'preserve-3d' }} className="absolute -inset-4 bg-white/[.11] rounded-2xl -z-10 border border-white/20"></motion.div>
-            <motion.div style={{ scale: scale, transformStyle: 'preserve-3d' }} className="flex flex-col justify-center space-y-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-lg">
-              <motion.p 
-                whileHover={{ scale: 1.1, translateZ: 50 }}
-                className="max-w-md text-gray-300 mx-auto text-center"
-                style={{ transformStyle: 'preserve-3d' }}
+            {/* BACKDROP WRAPPER THAT NO LONGER BREAKS WIDTH */}
+            <motion.div
+              style={{ scale: scale, transformStyle: 'preserve-3d' }}
+              className="absolute inset-0 -z-10 bg-white/10 border border-white/20 rounded-2xl backdrop-blur-sm"
+            />
+
+            {/* MAIN CARD */}
+            <motion.div
+              style={{ scale: scale, transformStyle: 'preserve-3d' }}
+              className="space-y-12 p-8 rounded-2xl bg-white/10 border border-white/20 shadow-lg"
+            >
+              <motion.p
+                whileHover={{ scale: 1.05, translateZ: 30 }}
+                className="max-w-md text-gray-300 text-left"
               >
                 At DIS Solutions, we are your strategic partner in navigating the complexities of the digital world. We craft distinctive and memorable creative experiences that not only align with but surpass the continually evolving standards of the IT landscape.
               </motion.p>
-              <motion.div 
-                className="grid grid-cols-2 gap-x-6 gap-y-10 text-center"
+
+              <motion.div
+                className="grid grid-cols-2 gap-x-6 gap-y-10 text-left"
+                whileHover={{ scale: 1.05, translateZ: 30 }}
                 style={{ transformStyle: 'preserve-3d' }}
-                whileHover={{ scale: 1.1, translateZ: 50 }}
               >
                 {stats.map((stat) => (
                   <div key={stat.label} className="space-y-1">
@@ -143,6 +149,7 @@ export function StandOut() {
               </motion.div>
             </motion.div>
           </motion.div>
+
         </motion.div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -24,10 +25,10 @@ const fadeInAnimation = {
 export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
   const navLinks = [
-    { href: '#', label: 'Home' },
-    { href: '#', label: 'About Us' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#services', label: 'Services' },
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About Us' },
+    { href: '/#projects', label: 'Projects' },
+    { href: '/#services', label: 'Services' },
   ];
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-8xl mx-auto">
@@ -39,7 +40,7 @@ export function Header() {
           variants={fadeInAnimation}
         >
           <Link
-            href="#"
+            href="/"
             className="flex items-center justify-center"
             prefetch={false}
           >
@@ -99,7 +100,7 @@ export function Header() {
                 <SheetDescription className="sr-only">Main navigation links for the website.</SheetDescription>
               </SheetHeader>
               <div className="flex flex-col gap-8 p-6 pt-0">
-                <Link href="#" className="flex items-center" prefetch={false} onClick={() => setIsSheetOpen(false)}>
+                <Link href="/" className="flex items-center" prefetch={false} onClick={() => setIsSheetOpen(false)}>
                   <DISLogo />
                 </Link>
                 <nav className="grid gap-4">

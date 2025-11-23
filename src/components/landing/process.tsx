@@ -40,12 +40,15 @@ const PROCESS_PHASES = [
 ]
 
 export default function Process() {
-    const processImage = PlaceHolderImages.find(img => img.id === 'process-image');
+  const processImage = PlaceHolderImages.find(img => img.id === 'process-image')
+
   return (
-    <section className="container min-h-svh bg-transparent text-white px-6 lg:px-16">
-      <div className="grid md:grid-cols-2 md:gap-8 xl:gap-12 items-start">
-        {/* Left Column */}
-        <div className="left-0 top-0 md:sticky md:h-svh md:py-12">
+    <section className="min-h-svh bg-transparent text-white px-6 lg:px-16">
+      <div className="mx-auto max-w-7xl grid md:grid-cols-2 md:gap-8 xl:gap-12 items-start">
+
+        {/* LEFT COLUMN (FIXED ALIGNMENT + PADDING) */}
+        <div className="left-0 top-0 md:sticky md:h-svh md:py-12 pr-6 lg:pr-12">
+
           <motion.h5
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -72,31 +75,34 @@ export default function Process() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="max-w-prose text-sm leading-relaxed text-gray-300"
+            className="max-w-lg text-sm leading-relaxed text-gray-300"
           >
-            Our structured and transparent process ensures your project is delivered on time and on budget, meeting the highest standards of quality and achieving your strategic business goals.
+            Our structured and transparent process ensures your project is delivered 
+            on time and on budget, meeting the highest standards of quality and 
+            achieving your strategic business goals.
           </motion.p>
+
           {processImage && (
-             <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="mt-8"
-              >
-                <Image
-                    src={processImage.imageUrl}
-                    alt={processImage.description}
-                    width={400}
-                    height={400}
-                    className="rounded-lg w-full h-auto"
-                    unoptimized
-                />
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-8"
+            >
+              <Image
+                src={processImage.imageUrl}
+                alt={processImage.description}
+                width={400}
+                height={400}
+                className="rounded-lg w-full h-auto"
+                unoptimized
+              />
+            </motion.div>
           )}
         </div>
 
-        {/* Right Column */}
+        {/* RIGHT COLUMN (UNCHANGED BEHAVIOR, FIXED VISUAL ALIGNMENT) */}
         <ContainerScroll className="min-h-[400vh] space-y-8 py-12">
           {PROCESS_PHASES.map((phase, index) => (
             <CardSticky
